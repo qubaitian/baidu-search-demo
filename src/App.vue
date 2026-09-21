@@ -69,7 +69,7 @@ watch(kw, (newVal) => {
   newScript.value = document.createElement("script");
   // 设置script标签的src属性,是百度的接口地址
   newScript.value.src =
-    "http://suggestion.baidu.com/su?cb=callback&wd=" + newVal;
+    "https://suggestion.baidu.com/su?cb=callback&wd=" + newVal;
   // 将新的script标签添加到body中
   document.body.appendChild(newScript.value);
   // 将新的script标签赋值给旧的script标签,目的是防止script标签重复上树
